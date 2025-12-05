@@ -1,0 +1,238 @@
+/* Basic Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #1a3557; }
+
+.site-header, .site-footer {
+  background: #16395a;
+  color: #fff;
+  padding: 0.5em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo, .footer-logo {
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+.site-nav, .footer-nav {
+  display: flex;
+  gap: 2em;
+}
+.site-nav a, .footer-nav a {
+  color: #1a3557;
+  background: #fff;
+  text-decoration: none;
+  padding: 0.2em 0.8em;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 1em;
+}
+.site-nav a.active, .footer-nav a.active {
+  text-decoration: underline;
+}
+.site-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  background: #16395a;
+  color: #fff;
+  font-size: 0.95em;
+}
+.footer-contact {
+  margin: 0.5em 0;
+}
+.footer-meta {
+  font-size: 0.8em;
+  color: #b0c4de;
+  display: flex;
+  gap: 2em;
+}
+
+.hero {
+  position: relative;
+  height: 350px;
+  background: #1a3557;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('images/hero-placeholder.jpg') center/cover no-repeat;
+  opacity: 0.5;
+  z-index: 0;
+}
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.8em;
+  font-family: Impact, Arial Black, sans-serif;
+  letter-spacing: 2px;
+}
+
+.who-we-are {
+  padding: 3em 2em 2em 2em;
+  background: #fff;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.who-we-are h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.who-we-are p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.testimonial {
+  background: #ffae42;
+  color: #1a3557;
+  padding: 2em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.testimonial span {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.95em;
+  font-style: normal;
+}
+.testimonial.alt {
+  background: #1a3557;
+  color: #fff;
+}
+
+.why-join {
+  background: #ffae42;
+  padding: 2em 0;
+  text-align: center;
+}
+.why-join h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.why-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card {
+  background: #fff;
+  color: #1a3557;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  flex: 1;
+}
+.card h3 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.step-off {
+  display: flex;
+  align-items: stretch;
+  min-height: 300px;
+  background: #1a3557;
+  color: #fff;
+}
+.step-image {
+  flex: 1;
+  background: url('images/step-placeholder.jpg') center/cover no-repeat;
+}
+.step-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.step-text h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+}
+
+.faq {
+  background: #16395a;
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
+.faq h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.faq span {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+.faq-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.faq-card {
+  background: #fff;
+  color: #1a3557;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  flex: 1;
+  text-align: left;
+}
+.faq-card strong {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .why-cards, .faq-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .step-off {
+    flex-direction: column;
+    min-height: 200px;
+  }
+  .step-image, .step-text {
+    min-height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header, .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    gap: 0.5em;
+  }
+  .site-nav, .footer-nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .who-we-are h2, .why-join h2, .step-text h2, .faq h2 {
+    font-size: 1.3em;
+  }
+  .why-cards, .faq-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
