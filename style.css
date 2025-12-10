@@ -200,6 +200,472 @@ body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #1a35
   margin-bottom: 0.5em;
 }
 
+/* About Page Styles */
+.mission {
+  padding: 3em 2em;
+  background: #fff;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.mission h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.mission p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.team {
+  padding: 3em 2em;
+  background: #f5f5f5;
+}
+.team h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.team-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.team-image {
+  width: 100%;
+  height: 250px;
+  background-color: #e0e0e0;
+}
+.team-card h3 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.3em;
+  padding: 1.5em 1.5em 0.3em 1.5em;
+}
+.team-card .role {
+  color: #ffae42;
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 0 1.5em 0.5em 1.5em;
+  margin: 0;
+}
+.team-card .bio {
+  padding: 0 1.5em 1.5em 1.5em;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.values {
+  padding: 3em 2em;
+  background: #ffae42;
+  text-align: center;
+}
+.values h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+  color: #1a3557;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.value-card {
+  background: #fff;
+  color: #1a3557;
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.value-card h3 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.value-card p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.about-testimonials {
+  padding: 3em 2em;
+  background: #fff;
+  text-align: center;
+}
+.about-testimonials h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testimonial-card {
+  background: #16395a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+.testimonial-card span {
+  display: block;
+  margin-top: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffae42;
+}
+
+.join-cta {
+  background: #ffae42;
+  color: #1a3557;
+  padding: 3em 2em;
+  text-align: center;
+}
+.join-cta h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.join-cta p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+.cta-button {
+  display: inline-block;
+  background: #1a3557;
+  color: #fff;
+  padding: 0.8em 2em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #0f2237;
+}
+
+/* Events Page Styles */
+.featured-event {
+  display: flex;
+  align-items: stretch;
+  min-height: 350px;
+  background: #fff;
+}
+.featured-content {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.featured-content h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.2em;
+  color: #ffae42;
+  margin-bottom: 0.5em;
+}
+.featured-content h3 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.featured-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 0.8em;
+}
+.featured-image {
+  flex: 1;
+  background-color: #e0e0e0;
+}
+.register-btn {
+  display: inline-block;
+  background: #ffae42;
+  color: #1a3557;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 1em;
+  transition: background 0.3s ease;
+}
+.register-btn:hover {
+  background: #ff9500;
+}
+
+.event-filters {
+  padding: 2em;
+  background: #f5f5f5;
+  text-align: center;
+}
+.event-filters h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.filter-btn {
+  padding: 0.7em 1.5em;
+  border: 2px solid #16395a;
+  background: #fff;
+  color: #16395a;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: #16395a;
+  color: #fff;
+}
+
+.calendar-section {
+  padding: 3em 2em;
+  background: #fff;
+  text-align: center;
+}
+.calendar-section h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 2em;
+}
+.calendar {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 2px solid #16395a;
+  border-radius: 8px;
+  padding: 1.5em;
+  background: #f9f9f9;
+}
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.day-header {
+  font-weight: bold;
+  color: #16395a;
+  padding: 0.8em;
+  font-size: 0.95em;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5em;
+}
+.calendar-day,
+.empty {
+  padding: 1em 0.5em;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 0.95em;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.empty {
+  background: transparent;
+}
+.event-dot {
+  color: #ffae42;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 2px;
+}
+
+.events-grid-section {
+  padding: 3em 2em;
+  background: #f5f5f5;
+}
+.events-grid-section h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.event-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.event-image {
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+}
+.event-details {
+  padding: 1.5em;
+}
+.event-details h3 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+.event-details p {
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+
+/* Contact Page Styles */
+.contact-methods {
+  padding: 3em 2em;
+  background: #fff;
+  text-align: center;
+}
+.contact-methods h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.method-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 2em;
+  text-align: center;
+}
+.method-card h3 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.4em;
+  color: #16395a;
+  margin-bottom: 0.8em;
+}
+.method-card p {
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.method-link {
+  display: inline-block;
+  color: #ffae42;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 0.8em;
+  transition: color 0.3s ease;
+}
+.method-link:hover {
+  color: #ff9500;
+}
+.response-time {
+  font-size: 0.85em;
+  color: #666;
+  font-style: italic;
+}
+
+.message-section {
+  padding: 3em 2em;
+  background: #ffae42;
+  text-align: center;
+}
+.message-section h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 2em;
+  color: #1a3557;
+  margin-bottom: 0.5em;
+}
+.message-section > p {
+  color: #1a3557;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 1.5em;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #1a3557;
+  font-size: 0.95em;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 2px solid #1a3557;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95em;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #16395a;
+  box-shadow: 0 0 5px rgba(22, 57, 90, 0.3);
+}
+.submit-btn {
+  width: 100%;
+  padding: 1em;
+  background: #1a3557;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submit-btn:hover {
+  background: #0f2237;
+}
+
 /* Responsive Styles */
 @media (max-width: 900px) {
   .why-cards, .faq-cards {
@@ -212,6 +678,28 @@ body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #1a35
   }
   .step-image, .step-text {
     min-height: 150px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .featured-event {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .featured-image {
+    min-height: 250px;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .methods-grid {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 600px) {
@@ -234,5 +722,59 @@ body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #1a35
   .why-cards, .faq-cards {
     flex-direction: column;
     gap: 1em;
+  }
+  .mission h2, .team h2, .values h2, .about-testimonials h2, .join-cta h2 {
+    font-size: 1.3em;
+  }
+  .event-filters h2, .calendar-section h2, .events-grid-section h2 {
+    font-size: 1.3em;
+  }
+  .contact-methods h2, .message-section h2 {
+    font-size: 1.3em;
+  }
+  .featured-content h3 {
+    font-size: 1.5em;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .featured-event {
+    flex-direction: column;
+  }
+  .featured-content {
+    padding: 1.5em;
+  }
+  .featured-image {
+    min-height: 200px;
+  }
+  .filter-buttons {
+    flex-direction: column;
+  }
+  .filter-btn {
+    width: 100%;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .methods-grid {
+    grid-template-columns: 1fr;
+  }
+  .calendar {
+    padding: 1em;
+  }
+  .calendar-day,
+  .empty {
+    padding: 0.8em 0.2em;
+    font-size: 0.8em;
+  }
+  .day-header {
+    font-size: 0.8em;
+    padding: 0.5em;
   }
 }
